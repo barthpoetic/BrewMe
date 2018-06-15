@@ -129,8 +129,14 @@
 	}
 
 	.btn-app img {
-    height: 40px;
-    width: auto;
+    	height: 40px;
+    	width: auto;
+	
+	}
+
+	.icon-small {
+		margin-top: 0.2px;
+	}
 
 }
 
@@ -144,4 +150,8 @@
 	.contact-form {
 		width: 100%;
 	}
+	.icon-small {
+		margin-top: 0.2px;
+	}
+
 }
