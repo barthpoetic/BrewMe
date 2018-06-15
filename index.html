@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
 	<link rel="stylesheet" type="text/css" href="resources/css/style.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
 	<link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet">
 	<link href="https://unpkg.com/ionicons@4.1.2/dist/css/ionicons.min.css" rel="stylesheet">
 	<title>BrewMe | 24/7 Beer & Chocolate Delivery</title>
@@ -17,7 +20,7 @@
 					<li><a href="#">Food Delivery</a></li>
 					<li><a href="#">How it Works</a></li>
 					<li><a href="#">Our cities</a></li>
-					<li><a href="#">Sign Up</a></li>
+					<li><a href="#">Current Deals</a></li>
 				</ul>
 			</div>
 		</nav>
@@ -69,34 +72,34 @@
         	<ul class="meals-showcase clearfix">
         		<li>
                     <figure class="meal-photo">
-                        <img src="resources/css/img/4.jpg" alt="Korean bibimap with">
+                        <img src="resources/css/img/4.jpg" alt="Korean bibimap with" class="menu-item">
                     </figure>      
                 </li>
                 <li>
                     <figure class="meal-photo">
-                        <img src="resources/css/img/2.jpg" alt="Korean bibimap with">
+                        <img src="resources/css/img/2.jpg" alt="Korean bibimap with" class="menu-item">
                     </figure>      
                 </li>
                 <li>
                     <figure class="meal-photo">
-                        <img src="resources/css/img/3.jpg" alt="Korean bibimap with">
+                        <img src="resources/css/img/3.jpg" alt="Korean bibimap with"  class="menu-item">
                     </figure>      
                 </li>
                 <li>
                     <figure class="meal-photo">
-                        <img src="resources/css/img/4.jpg" alt="Korean bibimap with">
+                        <img src="resources/css/img/4.jpg" alt="Korean bibimap with"  class="menu-item">
                     </figure>      
                 </li>
         	</ul>
             <ul class="meals-showcase clearfix">
                 <li>
                     <figure class="meal-photo">
-                        <img src="resources/css/img/5.jpg" alt="Korean bibimap with">
+                        <img src="resources/css/img/5.jpg" alt="Korean bibimap with"  class="menu-item">
                     </figure>      
                 </li>
                 <li>
                     <figure class="meal-photo">
-                        <img src="resources/css/img/6.jpg" alt="Korean bibimap with">
+                        <img src="resources/css/img/6.jpg" alt="Korean bibimap with"  class="menu-item">
                     </figure>      
                 </li>
                 <li>
@@ -213,6 +216,179 @@
 
             </div>            
         </section>
+        <section class="section-testimonials">
+            <div class="row">
+                <h2>Our customers can't live without us</h2>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-3">
+                    <blockquote>
+                        BrewMe is my new best friend after I left my boyfriend. Now all I do is get drunk and eat dark chocolate truffles. BrewMe has done more for me than any ex I ever had.
+                        <cite><img src="https://i.pinimg.com/originals/7f/b9/4a/7fb94a3a0ab9e19cdd4f380547171d9e.jpg" height="150px" width="auto">Debra Shellac</cite>
+                    </blockquote>
+                </div>
+                 <div class="col span-1-of-3">
+                    <blockquote>
+                        BrewMe is the best delivery spot in Orlando for drinks & truffles! I can't wait for them to reveal the new, expansive menu filled with lunch meals! My favourite spot in Orlando.
+                        <cite><img src="https://yt3.ggpht.com/a-/ACSszfECb5MiNSlisTKYMJC7YEGoQQrVqjGnU5pu5Q=s900-mo-c-c0xffffffff-rj-k-no" height="150px" width="auto">Jasmine Gonzalez</cite>
+                    </blockquote>
+                </div>
+                 <div class="col span-1-of-3">
+                    <blockquote>
+                        I am the CTO of a startup in downtown Orlando and always use BrewMe when I'm hosting a meetup or at home. Always prompt delivery and great customer service!
+                        <cite><img src="https://hairstyleonpoint.com/wp-content/uploads/2014/11/tumblr_na261xr0Qg1rwya4go1_1280.jpg" height="150px" width="auto">Alexandre Pierre</cite>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+        <section class="section-plans">
+            <div class="row">
+                <h2>Our Current Deals</h2>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-3">
+                    <div class="plan-box">
+                        <div>
+                            <h3>Lonely Hearts Club</h3>
+                            <p class="plan-price">$21</p>
+                            <p class="plan-price-meal">&nbsp; For those suffering from a broken heart, we are exactly what you need.</p>
+                        </div>
+                        <div>
+                            <ul>
+                                <li><ion-icon name="checkmark" class="icon-small icon-center"></ion-icon>36-pack of beer</li>
+                                <li><ion-icon name="checkmark" class="icon-small icon-center"></ion-icon>72 truffles of your choice</li>
+                                <li><ion-icon name="checkmark" class="icon-small icon-center"></ion-icon>Order 24/7</li>
+                                <li><ion-icon name="checkmark" class="icon-small icon-center"></ion-icon>Free Delivery</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <a href="mailto:taeluralexis@gmail.com" class="btn btn-full">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-3">
+                    <div class="plan-box">
+                        <div>
+                            <h3>Lonely Hearts Club</h3>
+                            <p class="plan-price">$21</p>
+                            <p class="plan-price-meal">&nbsp; For those suffering from a broken heart, we are exactly what you need.</p>
+                        </div>
+                        <div>
+                            <ul>
+                                <li><ion-icon name="checkmark" class="icon-small icon-center"></ion-icon>36-pack of beer</li>
+                                <li><ion-icon name="checkmark" class="icon-small icon-center"></ion-icon>72 truffles of your choice</li>
+                                <li><ion-icon name="checkmark" class="icon-small icon-center"></ion-icon>Order 24/7</li>
+                                <li><ion-icon name="checkmark" class="icon-small icon-center"></ion-icon>Free Delivery</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <a href="#" class="btn btn-ghost">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-3">
+                    <div class="plan-box">
+                        <div>
+                            <h3>Lonely Hearts Club</h3>
+                            <p class="plan-price">$21</p>
+                            <p class="plan-price-meal">&nbsp; For those suffering from a broken heart, we are exactly what you need.</p>
+                        </div>
+                        <div>
+                            <ul>
+                                <li><ion-icon name="checkmark" class="icon-small icon-center"></ion-icon>36-pack of beer</li>
+                                <li><ion-icon name="checkmark" class="icon-small icon-center"></ion-icon>72 truffles of your choice</li>
+                                <li><ion-icon name="checkmark" class="icon-small icon-center"></ion-icon>Order 24/7</li>
+                                <li><ion-icon name="checkmark" class="icon-small icon-center"></ion-icon>Free Delivery</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <a href="#" class="btn btn-ghost">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-form">
+            <div class="row">
+                <h2>We're Happy to Hear From You</h2>
+            </div>
+            <div class="row">
+                <form method="post" action="#" class="contact-form">
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>Name</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="text" name="name" id="name" placeholder="Your name" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>Email</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="email" name="email" id="email" placeholder="Your email" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="find-us">How did you find us?</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <select name="find-us" id="find-us">
+                                <option value="friends">Friends</option>
+                                <option value="twitter" selected>Twitter</option>
+                                <option value="facebook">Facebook</option> 
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                  </div>
+                   <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>Drop us a line</label>
+                        </div>
+                    <div class="col span-2-of-3">
+                        <textarea name="message" placeholder="Your message"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                <div class="col span-1-of-3">
+                    <label>&nbsp;</label>
+                </div>
+                <div class="col span-2-of-3">
+                    <input class="btn-full" type="submit" value="Send it!">
+                </div>
+              </div>
+            </form>
+            </div>
+        </section>
+
+        <footer>
+            <div class="row">
+                <div class="col span-1-of-2">
+                    <ul class="footer-nav">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">We're Hiring</a></li>
+                        <li><a href="#">iOS App</a></li>
+                        <li><a href="#">Android App</a></li>
+                    </ul>
+                </div>
+                <div class="col span-1-of-2">
+                    <ul class="social-links">
+                        <li><a href="#"><ion-icon name="logo-facebook" class="logo-facebook"></ion-icon></a></li>
+                        <li><a href="#"><ion-icon name="logo-twitter"  class="logo-twitter"></ion-icon></a></li>
+                        <li><a href="#"><ion-icon name="logo-instagram" class="logo-instagram"></ion-icon></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <p>
+                    Copyright &copy; 2018 by Tae'lur Alexis. All rights reserved. 
+                </p>
+            </div>
+        </footer>
         <script src="https://unpkg.com/ionicons@4.1.2/dist/ionicons.js"></script>
 
 </body>

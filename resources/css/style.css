@@ -8,12 +8,14 @@
 	box-sizing: border-box;
 }
 
-html {
+html,
+body {
 	background-color: #fff;
 	font-family: 'Lato', san-serif;
 	font-size: 20px;
 	font-weight: 300;
 	text-rendering: optimizeLegibility;
+	overflow-x: hidden;
 }
 
 .clearfix {zoom: ;}
@@ -43,13 +45,15 @@ section {
 }
 
 /*--------------------------------------------*/
-/* Header */
+/* HEADER */
 /*--------------------------------------------*/
 header{
 	background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.7)), url(img/beer-choc-evntbrite.jpg);
 	background-size: cover;
 	background-position: center;
 	height: 100vh;
+	background-attachment: fixed;
+
 }
 
 .hero-text-box{
@@ -61,7 +65,7 @@ header{
 }
 
 /*--------------------------------------------*/
-/* Headings */
+/* HEADINGS */
 /*--------------------------------------------*/
 h1,
 h2,
@@ -107,7 +111,7 @@ h2:after{
 
 
 /*--------------------------------------------*/
-/* Paragraphs */
+/* PARAGRAPHS */
 /*--------------------------------------------*/
 .long-copy{
 	line-height: 145%;
@@ -122,7 +126,7 @@ h2:after{
 
 
 /*--------------------------------------------*/
-/* Icons */
+/* ICONS */
 /*--------------------------------------------*/
 
 .icon-big{
@@ -147,12 +151,9 @@ h2:after{
 	margin-top: -5px;
 }
 
-.twitter{
-	margin-left: 1%;
-}
 
 /*--------------------------------------------*/
-/* Navigation */
+/* NAVIGATION */
 /*--------------------------------------------*/
 
 .logo{
@@ -213,7 +214,7 @@ h2:after{
 
 
 /*--------------------------------------------*/
-/* Meals */
+/* MEALS */
 /*--------------------------------------------*/
 
 .section-meals {
@@ -313,10 +314,11 @@ h2:after{
 }
 
 /*--------------------------------------------*/
-/* BUTTON */
+/* BUTTONS */
 /*--------------------------------------------*/
 .btn:link,
-.btn:visited {
+.btn:visited,
+input[type=submit]{
 	display: inline-block;
 	padding: 10px 30px;
 	font-weight: 300;
@@ -327,7 +329,8 @@ h2:after{
 }
 
 .btn-full:link,
-.btn-full:visited {
+.btn-full:visited,
+input[type=submit] {
 	background-color: #e17055;
 	border: 1px solid #e17055;
 	color: #fff;
@@ -345,12 +348,15 @@ h2:after{
 /*active- when you click*/
 
 .btn:hover,
-.btn:active {
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active {
 	background-color: #dc5838;
 }
 
 .btn-full:hover, 
-.btn-full:active {
+.btn-full:active,
+input[type_submit] {
 	border: 1px solid #dc5838;
 }
 
@@ -390,4 +396,211 @@ a:active{
 
 .city-feature{
 	margin-bottom: 5px;
+}
+
+/*--------------------------------------------*/
+/* TESTIMONIALS */
+/*--------------------------------------------*/
+
+.section-testimonials {
+	background-image: linear-gradient(rgba(0,0,0, 0.8), rgba(0, 0, 0, 0.8)), url('https://cdn.craftbeer.com/wp-content/uploads/2015/05/05204941/IMG_3002.jpg');
+	background-size: cover;
+	color: #fff;
+	background-attachment: fixed;
+}
+
+blockquote{
+	padding: 2%;
+	font-style: italic;
+	line-height: 145%;
+	position: relative;
+}
+
+blockquote:before {
+	content: "\201C";
+	font-size: 400%;
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -3px;
+}
+
+cite{
+	font-size: 90%;
+	margin-top: 25px;
+	display: block;
+}
+
+
+cite img{
+	height: 100px;
+	border-radius: 50%;
+	margin-right: 10px;
+	vertical-align: middle;
+}
+
+
+/*--------------------------------------------*/
+/* ORDER NOW */
+/*--------------------------------------------*/
+.section-plans {
+	background-color: #fcf9f9;
+}
+
+.plan-box ul {
+	list-style: none;
+}
+
+.plan-box ul li {
+	padding: 5px 0;
+}
+
+.plan-box div:first-child {
+	background-color: #fff;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+.plan-box div:last-child{
+	text-align: center;
+	border: 0;
+}
+
+.plan-box{
+	background-color: #fff;
+	border-radius: 5px;
+	width: 90%;
+	margin-left: 5%;
+	-webkit-box-shadow: 6px 10px 34px 2px rgba(240,232,240,1);
+	-moz-box-shadow: 6px 10px 34px 2px rgba(240,232,240,1);
+	box-shadow: 6px 10px 34px 2px rgba(240,232,240,1);
+}
+
+.plan-box div{
+	padding: 15px;
+	border-bottom: 1px solid #e8e8e8;
+}
+
+.plan-price {
+	font-size: 300%;
+	margin-bottom: 10px;
+	font-weight: 300;
+	color: #dc5838;
+}
+
+.plan-price-meal{
+	font-size: 80%;
+}
+
+.icon-center {
+	margin-top: -9%;
+}
+
+
+
+/*--------------------------------------------*/
+/* CONTACT */
+/*--------------------------------------------*/
+
+.contact-form {
+	width: 60%;
+	margin: 0 auto;
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea {
+	width: 100%;
+	padding: 7px;
+	border-radius: 3px;
+	border: 1px solid #ccc;
+}
+
+textarea {
+	height: 100px;
+}
+
+input[type=checkbox] {
+	margin: 10px 5px 10px 0;
+}
+
+*:focus {outline: none;}
+
+/*--------------------------------------------*/
+/* FOOTER */
+/*--------------------------------------------*/
+
+footer {
+	background-color: #333;
+	padding: 50px;
+	font-size: 80%; 
+}
+
+.footer-nav {
+	list-style: none;
+	float: left;
+}
+
+.social-links {
+	list-style: none;
+	float: right;
+}
+
+
+.footer-nav li,
+.social-links li {
+	display: inline-block;
+	margin-right: 20px;
+}
+
+.footer-nav li:last-child,
+.social-links li:last-child {
+	margin-right: 0;
+
+}
+
+.footer-nav li a:link, 
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited {,
+	text-decoration: none;
+	border: 0;
+	color: #888;
+	transition: color 0.2s;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active {
+	color: #ddd;
+}
+
+.social-links li a:link,
+.social-links li a:visited {
+	font-size: 160%;
+}
+
+.logo-facebook,
+.logo-instagram,
+.logo-twitter {
+	transition: color: 0.2s;
+}
+
+
+.logo-facebook:hover {
+	color: #3b5998;
+}
+.logo-instagram:hover {
+	color: #517f64;
+}
+.logo-twitter:hover {
+	color: #00aced;
+}
+
+
+
+footer p {
+	color: #888;
+	text-align: center;
+	margin-top: 30px;
 }
