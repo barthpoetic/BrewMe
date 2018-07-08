@@ -86,8 +86,47 @@
 		margin: 0 0 4% 0;
 	}
 
-	.main-nav {
+	/*.main-nav {
 		display: none;
+	}*/
+
+	.mobile-nav-icon {
+		display: inline-block;
+	}
+
+	.main-nav {
+		float: left;
+		margin-top: 35px;
+		margin-left: 25px;
+	}
+
+	.main-nav li {
+		display: block;
+	}
+
+	.main-nav li a:link,
+	.main-nav li a:visited {
+		display: block;
+		border: 0;
+		padding: 10px 0;
+		font-size: 100%;
+	}
+
+
+	.sticky .main-nav {
+		margin-top: 10px;
+	}
+
+	.sticky .main-nav li a:link,
+	.sticky .main-nav li a:visited {
+		padding: 16px 0;
+	}
+
+	.sticky .main-nav-icon i {
+		color: #555;
+	}
+	.sticky .mobile-nav-icon {
+		margin-top: 10px;
 	}
 
 	.plan-box div {
@@ -111,8 +150,8 @@
 		font-size: 150%;
 	}
 
-	.steps-box {
-
+	.icon-small {
+		margin-top: 0.5px;
 	}
 
 	.directions div {
@@ -134,10 +173,6 @@
 	
 	}
 
-	.icon-small {
-		margin-top: 0.2px;
-	}
-
 }
 
 /*For small phones: from 0 to 480px*/
@@ -151,7 +186,6 @@
 		width: 100%;
 	}
 	.icon-small {
-		margin-top: 0.2px;
+		margin-top: 0.5px;
 	}
-
 }

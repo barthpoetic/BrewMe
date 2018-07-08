@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+    <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
 	<link rel="stylesheet" type="text/css" href="resources/css/style.css">
     <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
 	<link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet">
@@ -16,22 +17,24 @@
 		<nav>
 			<div class="row">
 				<img src="resources/css/img/logo-white.png" alt="BrewMe" class="logo">
+                <img src="resources/css/img/logo.png" alt="BrewMe" class="logo-black">
 				<ul class="main-nav">
-					<li><a href="#">Food Delivery</a></li>
-					<li><a href="#">How it Works</a></li>
-					<li><a href="#">Our cities</a></li>
-					<li><a href="#">Current Deals</a></li>
+					<li><a href="#features">Food Delivery</a></li>
+					<li><a href="#directions">How it Works</a></li>
+					<li><a href="#locations">Our cities</a></li>
+					<li><a href="#deals">Current Deals</a></li>
 				</ul>
+                <a class="mobile-nav-icon"><ion-icon cdname="menu"></ion-icon></a>
 			</div>
 		</nav>
 		<div class="hero-text-box">
 			<h1>Beer & Chocolate.<br>Delivered at any time.</h1>
-			<a class="btn btn-full" href="#">I'm hungry</a>
-			<a class="btn btn-ghost" href="#">Entice Me</a>
+			<a class="btn btn-full js--scroll-to-deals" href="#">I'm hungry</a>
+			<a class="btn btn-ghost js--scroll-to-start" href="#">Entice Me</a>
 		</div>
 	</header>
 
-	   <section class="section-features">
+	   <section class="section-features js--section-features" id="features">
             <div class="row">
                 <h2>Let go and indulge</h2>
                 <p class="long-copy">
@@ -40,7 +43,7 @@
             </div>
 
             <br>
-            
+
             <div class="row">
                 <div class="col span-1-of-3 box">
                 	<ion-icon name="time" class="icon-big"></ion-icon>
@@ -63,9 +66,9 @@
                         All of our ingredient are pure, whole and organic. Our chocolate truffles are vegan and made with love and ethics.
                     </p>
                 </div>
-            
+
             </div>
-                
+
         </section>
 
         <section class="section-meals">
@@ -73,54 +76,54 @@
         		<li>
                     <figure class="meal-photo">
                         <img src="resources/css/img/4.jpg" alt="Korean bibimap with" class="menu-item">
-                    </figure>      
+                    </figure>
                 </li>
                 <li>
                     <figure class="meal-photo">
                         <img src="resources/css/img/2.jpg" alt="Korean bibimap with" class="menu-item">
-                    </figure>      
+                    </figure>
                 </li>
                 <li>
                     <figure class="meal-photo">
                         <img src="resources/css/img/3.jpg" alt="Korean bibimap with"  class="menu-item">
-                    </figure>      
+                    </figure>
                 </li>
                 <li>
                     <figure class="meal-photo">
                         <img src="resources/css/img/4.jpg" alt="Korean bibimap with"  class="menu-item">
-                    </figure>      
+                    </figure>
                 </li>
         	</ul>
             <ul class="meals-showcase clearfix">
                 <li>
                     <figure class="meal-photo">
                         <img src="resources/css/img/5.jpg" alt="Korean bibimap with"  class="menu-item">
-                    </figure>      
+                    </figure>
                 </li>
                 <li>
                     <figure class="meal-photo">
                         <img src="resources/css/img/6.jpg" alt="Korean bibimap with"  class="menu-item">
-                    </figure>      
+                    </figure>
                 </li>
                 <li>
                     <figure class="meal-photo">
                         <img src="resources/css/img/7.jpg" alt="Korean bibimap with">
-                    </figure>      
+                    </figure>
                 </li>
                 <li>
                     <figure class="meal-photo">
                         <img src="resources/css/img/8.jpg" alt="Korean bibimap with">
-                    </figure>      
+                    </figure>
                 </li>
             </ul>
         </section>
-        <section class="section-steps">
+        <section class="section-steps" id="directions">
             <div class="row">
                 <h2>How it Works</h2>
             </div>
             <div class="row">
                 <div class="col span-1-of-2 steps-box">
-                    <img src="resources/css/img/iphone_6.png" alt="stupid iPhone" class="app-screen">
+                    <img src="resources/css/img/iphone_6.png" alt="stupid iPhone" class="app-screen js--wp-2">
                 </div>
                 <div class=" col span-1-of-2 steps-box">
                     <div class="directions">
@@ -140,11 +143,11 @@
                 </div>
             </div>
         </section>
-        <section class="section-cities">
+        <section class="section-cities" id="locations">
             <div class="row">
                 <h2>Where do we deliver to?</h2>
             </div>
-            <div class="row">
+            <div class="row js--wp-3">
                 <div class="col span-1-of-4 box">
                     <img src="resources/css/img/downtownorl.jpg" alt="lake eola">
                     <h3>Downtown</h3>
@@ -152,7 +155,7 @@
                         <i class="ion-ios-person icon-small"></i>
                         1600 happy drunks
                     </div>
-                
+
                     <div class="city-feature">
                         <i class="ion-ios-star icon-small"></i>
                         60 chefs
@@ -167,9 +170,9 @@
                     <h3>UCF-East Orland0</h3>
                     <div class="city-feature">
                         <i class="ion-ios-person icon-small"></i>
-                        500 college kids 
+                        500 college kids
                     </div>
-                
+
                     <div class="city-feature">
                         <i class="ion-ios-star icon-small"></i>
                         60 chefs
@@ -186,7 +189,7 @@
                         <i class="ion-ios-person icon-small"></i>
                         1600 happy drunks
                     </div>
-                
+
                     <div class="city-feature">
                         <i class="ion-ios-star icon-small"></i>
                         60 chefs
@@ -203,7 +206,7 @@
                         <i class="ion-ios-person icon-small"></i>
                         1600 happy drunks
                     </div>
-                
+
                     <div class="city-feature">
                         <i class="ion-ios-star icon-small"></i>
                         60 chefs
@@ -214,7 +217,7 @@
                     </div>
                 </div>
 
-            </div>            
+            </div>
         </section>
         <section class="section-testimonials">
             <div class="row">
@@ -241,13 +244,13 @@
                 </div>
             </div>
         </section>
-        <section class="section-plans">
+        <section class="section-plans js--section-deals" id="deals">
             <div class="row">
                 <h2>Our Current Deals</h2>
             </div>
             <div class="row">
                 <div class="col span-1-of-3">
-                    <div class="plan-box">
+                    <div class="plan-box js--wp-4">
                         <div>
                             <h3>Lonely Hearts Club</h3>
                             <p class="plan-price">$21</p>
@@ -338,7 +341,7 @@
                             <select name="find-us" id="find-us">
                                 <option value="friends">Friends</option>
                                 <option value="twitter" selected>Twitter</option>
-                                <option value="facebook">Facebook</option> 
+                                <option value="facebook">Facebook</option>
                             </select>
                         </div>
                     </div>
@@ -385,11 +388,18 @@
             </div>
             <div class="row">
                 <p>
-                    Copyright &copy; 2018 by Tae'lur Alexis. All rights reserved. 
+                    Copyright &copy; 2018 by Tae'lur Alexis. All rights reserved.
                 </p>
             </div>
         </footer>
         <script src="https://unpkg.com/ionicons@4.1.2/dist/ionicons.js"></script>
+        <script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous">
+        </script>
+        <script src="vendors/js/jquery.waypoints.min.js"></script>
+        <script src="resources/js/script.js"></script>
 
 </body>
 </html>
